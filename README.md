@@ -14,10 +14,8 @@ Oracle数据源评估区块链系统是一个基于分布式共识机制的数�
 ## 🚀 快速开始
 
 ### 环境要求
-```bash
-Python 3.9+
-依赖包: matplotlib, numpy, scikit-learn, pyyaml, requests
-```
+- Python 3.9+
+- 虚拟环境（推荐）
 
 ### 安装步骤
 ```bash
@@ -25,22 +23,43 @@ Python 3.9+
 git clone <repository-url>
 cd DataSourceAssess
 
-# 2. 安装依赖
-pip install matplotlib numpy scikit-learn pyyaml requests
+# 2. 创建虚拟环境
+python -m venv .venv
+source .venv/bin/activate  # Linux/Mac
+# 或 .venv\Scripts\activate  # Windows
+
+# 3. 安装依赖
+pip install -r requirements.txt
 ```
 
 ### 运行系统
 ```bash
-# 1. 启动提议者节点（终端1）
-python proposer_node.py
+# 1. 激活虚拟环境
+source .venv/bin/activate
 
-# 2. 启动矿工节点（终端2）
-python miner_node.py
+# 2. 启动三个提案节点（需要三个独立终端）
+# 终端1 - 启动提案节点1
+python proposer_node.py --id proposer-1
 
-# 3. 生成可视化报告
+# 终端2 - 启动提案节点2
+python proposer_node.py --id proposer-2
+
+# 终端3 - 启动提案节点3
+python proposer_node.py --id proposer-3
+
+# 3. 启动矿工节点（终端4）
+# 保留历史（默认，推荐）
+python miner_node.py --id miner-1 --quorum 3
+# 或：清空历史并重置（仅当需要全新初始化时）
+python miner_node.py --id miner-1 --quorum 3 --reset-state
+
+# 4. 启动Web仪表板（终端5）
+source .venv/bin/activate && uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+
+# 5. 生成可视化报告
 python visualize_reports.py
 
-# 4. 检查系统健康状况
+# 6. 检查系统健康状况
 python api_health_check.py
 ```
 
