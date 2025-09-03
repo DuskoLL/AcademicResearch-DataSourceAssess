@@ -277,14 +277,18 @@ def main() -> None:
     parser.add_argument("--id", default="miner-1", help="矿工节点ID")
     parser.add_argument("--quorum", type=int, default=3, help="多数门限")
     parser.add_argument("--maintenance-interval", type=int, default=60, help="维护间隔（秒）")
+    parser.add_argument("--reset-state", action="store_true", help="清空历史并全新初始化")
     args = parser.parse_args()
-
+    
     node_id = args.id
     quorum = args.quorum
     maintenance_interval = args.maintenance_interval
-
-    # 系统启动时重置状态
-    reset_system_state()
+    
+    # 系统启动时可选择是否重置状态（默认保留历史）
+    if args.reset_state:
+        reset_system_state()
+    else:
+        print("[启动] 保留历史状态启动（可通过 --reset-state 进行全新初始化）")
 
     chain = ChainState(miner_id=node_id, quorum=quorum)
     bootstrap_registry_with_builtins()
