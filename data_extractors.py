@@ -45,6 +45,10 @@ class FallbackExtractor(DataExtractor):
         super().__init__("fallback")
         self.fallback_manager = get_fallback_manager()
     
+    def extract_value_from_json(self, data: Dict, category: str) -> Optional[float]:
+        """从JSON数据中提取值（兼容方法）"""
+        return self._extract_price_generic(data)
+    
     def extract(self, url: str) -> Tuple[Optional[float], float, Optional[str], Optional[float], Dict[str, str]]:
         """使用备用API策略提取数据"""
         # 从URL中推断要获取的加密货币类型

@@ -1,0 +1,182 @@
+{
+  "timestamp": "2025-09-06 22:26:30",
+  "overall_compliance_score": 100.0,
+  "reproducibility_score": 100.0,
+  "methodology_completeness": 100.0,
+  "statistical_significance_tests": {
+    "anova_accuracy": {
+      "f_statistic": 734.1548323023843,
+      "p_value": 4.797706273969498e-308,
+      "significant": true
+    },
+    "anova_availability": {
+      "f_statistic": 1752.5231555968314,
+      "p_value": 0.0,
+      "significant": true
+    },
+    "anova_response_time": {
+      "f_statistic": 266.1403278643091,
+      "p_value": 8.848983070605921e-160,
+      "significant": true
+    },
+    "anova_volatility": {
+      "f_statistic": 258.53104239583325,
+      "p_value": 2.0681123128833837e-156,
+      "significant": true
+    },
+    "anova_update_frequency": {
+      "f_statistic": 1230.0533526964973,
+      "p_value": 0.0,
+      "significant": true
+    },
+    "anova_integrity": {
+      "f_statistic": 1923.3886798405701,
+      "p_value": 0.0,
+      "significant": true
+    },
+    "anova_error_rate": {
+      "f_statistic": 536.2009278208577,
+      "p_value": 4.272600752329151e-256,
+      "significant": true
+    },
+    "anova_historical": {
+      "f_statistic": 825.2015244785068,
+      "p_value": 0.0,
+      "significant": true
+    },
+    "kruskal_accuracy": {
+      "h_statistic": 896.6123730383329,
+      "p_value": 9.028994533660563e-193,
+      "significant": true
+    },
+    "kruskal_availability": {
+      "h_statistic": 968.483852002935,
+      "p_value": 2.4119147264456853e-208,
+      "significant": true
+    },
+    "kruskal_response_time": {
+      "h_statistic": 523.3185073701427,
+      "p_value": 6.056513527616258e-112,
+      "significant": true
+    },
+    "kruskal_volatility": {
+      "h_statistic": 383.487440112649,
+      "p_value": 1.0274026386578803e-81,
+      "significant": true
+    },
+    "kruskal_update_frequency": {
+      "h_statistic": 915.1238943181179,
+      "p_value": 8.805808421498405e-197,
+      "significant": true
+    },
+    "kruskal_integrity": {
+      "h_statistic": 979.7625199853046,
+      "p_value": 8.674579869494352e-211,
+      "significant": true
+    },
+    "kruskal_error_rate": {
+      "h_statistic": 823.0423428085275,
+      "p_value": 7.835601037663345e-177,
+      "significant": true
+    },
+    "kruskal_historical": {
+      "h_statistic": 810.7799030600257,
+      "p_value": 3.550781859476829e-174,
+      "significant": true
+    },
+    "chi_square_grade_distribution": {
+      "chi2_statistic": 231.20909090909092,
+      "p_value": 7.249353979601215e-49,
+      "significant": true
+    }
+  },
+  "clustering_validation": {
+    "cross_validation_accuracy": {
+      "mean": 0.9581818181818182,
+      "std": 0.006680426571226853,
+      "scores": [
+        0.9590909090909091,
+        0.9454545454545454,
+        0.9636363636363636,
+        0.9590909090909091,
+        0.9636363636363636
+      ]
+    },
+    "cross_validation_f1": {
+      "mean": 0.9650453179032057,
+      "std": 0.0069166153999740895,
+      "scores": [
+        0.9602638715062974,
+        0.9539167265529824,
+        0.9714523528839376,
+        0.968023906452169,
+        0.971569732120642
+      ]
+    },
+    "cross_validation_precision": {
+      "mean": 0.9649624907990042,
+      "std": 0.007758883150641002,
+      "scores": [
+        0.9631000979136853,
+        0.9508076707385463,
+        0.9682477484201621,
+        0.9696960408684546,
+        0.9729608960541727
+      ]
+    },
+    "cross_validation_recall": {
+      "mean": 0.966155050473709,
+      "std": 0.00679382182258144,
+      "scores": [
+        0.9584523926777448,
+        0.9583827440165468,
+        0.9755487339994382,
+        0.9677280205449218,
+        0.9706633611298926
+      ]
+    },
+    "sample_size": 1100,
+    "feature_count": 8,
+    "class_count": 5,
+    "class_distribution": {
+      "A": 356,
+      "A+": 272,
+      "B": 259,
+      "C": 72,
+      "D": 141
+    }
+  },
+  "iet_requirements_check": {
+    "experimental_design": {
+      "score": 100.0,
+      "status": "PASS",
+      "requirements": [
+        "Multi-dimensional evaluation metrics ✓",
+        "Clustering algorithm implementation ✓",
+        "Data quality validation ✓",
+        "Consensus mechanism ✓",
+        "Statistical analysis ✓",
+        "API diversity ✓"
+      ]
+    },
+    "reproducibility": {
+      "score": 100.0,
+      "status": "PASS",
+      "requirements": [
+        "Data completeness ✓",
+        "Algorithm parameters recorded ✓",
+        "Blockchain data consistency ✓",
+        "Configuration files ✓",
+        "Logging system ✓"
+      ]
+    },
+    "statistical_rigor": {
+      "score": 170,
+      "significant_tests": 17,
+      "total_tests": 17
+    }
+  },
+  "recommendations": [
+    "实验设计符合IET期刊要求，建议继续保持高质量标准"
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "timestamp": 1755349134.483758,
+  "timestamp": 1757168406.462139,
   "issues_found": [],
   "fixes_applied": [
     "[btc_binance] 缺失字段 created_at，已添加默认值",
@@ -2219,17 +2219,20 @@
       "virtual_cluster": 1000
     },
     "grade_distribution": {
-      "A": 351,
-      "C": 88,
-      "A+": 249,
-      "B": 262,
-      "D": 150
+      "A+": 272,
+      "C": 72,
+      "A": 356,
+      "B": 259,
+      "D": 141
     },
     "feature_completeness": {
       "mean": 100.0,
       "min": 100.0,
       "max": 100.0
     },
-    "total_blocks": 0
+    "total_blocks": 42,
+    "proposal_types": {
+      "CLUSTER": 42
+    }
   }
 }

@@ -156,3 +156,12 @@
 2025-08-16 22:29:09 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOTUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
 2025-08-16 22:29:10 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=315.30ms
 2025-08-16 22:29:12 - chain - INFO - 新区块: 高度=41, 哈希=ed5b4607835e
+2025-09-06 22:19:41 - test - INFO - Test log message
+2025-09-06 22:19:41 - test - WARNING - Test warning message
+2025-09-06 22:19:41 - clustering - INFO - K-means聚类完成: k=5, 数据点=50, 耗时=2.15ms
+2025-09-06 22:19:58 - test - INFO - Test log message
+2025-09-06 22:19:58 - test - WARNING - Test warning message
+2025-09-06 22:19:58 - clustering - INFO - K-means聚类完成: k=5, 数据点=50, 耗时=1.41ms
+2025-09-06 22:27:34 - test - INFO - Test log message
+2025-09-06 22:27:34 - test - WARNING - Test warning message
+2025-09-06 22:27:34 - clustering - INFO - K-means聚类完成: k=5, 数据点=50, 耗时=1.10ms
